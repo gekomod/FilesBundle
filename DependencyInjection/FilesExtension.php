@@ -11,15 +11,16 @@ use Symfony\Component\DependencyInjection\Definition;
 use Symfony\Component\DependencyInjection\Loader;
 use Symfony\Component\DependencyInjection\Reference;
 
-class SettingsExtension extends Extension
+class FilesExtension extends Extension
 {
-   public function load(array $configs, ContainerBuilder $container)
-{
-        $loader = new Loader\YamlFileLoader(
-            $container,
-            new FileLocator(__DIR__.'/../Resources/config')
-        );
-        $loader->load('services.yaml');
-        $loader->load('twig.yaml');
+    public function load(array $configs, ContainerBuilder $container)
+    {
+            $loader = new Loader\YamlFileLoader(
+                $container,
+                new FileLocator(__DIR__.'/../Resources/config')
+            );
+            $loader->load('services.yaml');
+            $loader->load('twig.yaml');
+    }
 }
-}
+
