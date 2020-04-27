@@ -1,4 +1,4 @@
-services:
+services:     
     admin.files:
         class: Gekomod\FilesBundle\Admin\FilesAdmin
         arguments:
