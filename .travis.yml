@@ -70,12 +70,7 @@ matrix:
     - php: 7.0
       env: SYMFONY_VERSION="3.1.*"
     # common (some popular version combinations)
-  allow_failures:
-    - php: nightly
-#    # code coverage is very slow; allow a failure to get the Travis result early
-#    - env:
-#        - SYMFONY_VERSION="2.8.*"
-#        - ENABLE_CODE_COVERAGE="true"
+
 
 before_install:
   - stty cols 120
@@ -112,8 +107,7 @@ after_success:
     - php: 7.0
       env: SYMFONY_VERSION="3.1.*"
     # common (some popular version combinations)
-  allow_failures:
-    - php: nightly
+
 #    # code coverage is very slow; allow a failure to get the Travis result early
 #    - env:
 #        - SYMFONY_VERSION="2.8.*"
