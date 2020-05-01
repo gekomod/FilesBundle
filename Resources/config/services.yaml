@@ -1,9 +1,0 @@
-services:     
-    admin.files:
-        class: Gekomod\FilesBundle\Admin\FilesAdmin
-        arguments:
-            - ~
-            - ~
-            - Gekomod\FilesBundle\Controller\FilesCRUDController
-        tags:
-            - { name: sonata.admin, manager_type: orm, group: Ustawienia, label: Manadzer Plików }
