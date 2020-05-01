@@ -1,0 +1,460 @@
+/* FILE MANAGER */
+/*======================================*/
+.file-sidebar .list-group-items {
+  padding: 10px 10px;
+}
+.file-list {
+  list-style: none;
+  padding: 20px 0;
+}
+.file-list > li {
+  position: relative;
+  padding: 12px;
+  border-radius: 1px;
+}
+.file-list > li:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.file-list > li:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+.file-list > li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.file-list > li.selected {
+  background-color: #f2f0c2;
+}
+.file-list .file-control {
+  float: left;
+  width: 50px;
+  line-height: 3em;
+}
+.file-list .media {
+  overflow: hidden;
+  margin: 0 20px 0 0;
+}
+.file-list .media-block > .media-left {
+  font-size: 2.5em;
+  line-height: 1.2em;
+}
+.file-list .media-block .media-body {
+  vertical-align: middle;
+}
+.file-list .file-details {
+  display: block;
+  overflow: hidden;
+  margin-right: 50px;
+}
+.file-list .file-name {
+  color: #4d627b;
+  margin-bottom: 0;
+  font-weight: 700;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file-list .file-name.single-line {
+  line-height: 2.5em;
+}
+.file-list .file-settings {
+  float: right;
+  font-size: 85%;
+  text-align: right;
+}
+.file-list .file-settings a,
+.file-list .file-settings button {
+  padding: 10px 5px;
+  display: inline-block;
+}
+.file-panel {
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  margin-top: 20px;
+}
+.file-toolbar {
+  padding: 5px 0;
+  text-align: center;
+}
+.file-toolbar > .btn-file-toolbar {
+  padding: 0;
+  display: inline-block;
+  float: none !important;
+}
+.file-toolbar > .btn-file-toolbar .btn {
+  padding: 6px;
+}
+@media (min-width: 768px) {
+  .file-panel {
+    border-top: 0;
+    margin-top: 0;
+  }
+  .file-manager .file-sidebar {
+    padding-right: 15px;
+    border-right: 1px solid rgba(0, 0, 0, 0.07);
+  }
+  .file-toolbar {
+    padding: 5px 0;
+    text-align: left;
+  }
+  .file-toolbar > .btn-file-toolbar {
+    padding: 0 10px;
+    display: inline-block;
+  }
+  .file-toolbar > .btn-file-toolbar.pull-right {
+    float: right !important;
+  }
+  .file-toolbar > .btn-file-toolbar:not(:first-child) {
+    border-left: 1px solid rgba(0, 0, 0, 0.07);
+  }
+  .file-toolbar > .btn-file-toolbar:first-child {
+    padding-left: 0;
+  }
+}
+
+.panel .fixed-fluid [class*="fixed-"] {
+  background-color: transparent;
+}
+.fixed-fluid [class*="fixed-"] {
+  background-color: #ecf0f5;
+  border-radius: 3px;
+}
+
+.pad-all {
+  padding: 15px;
+}
+/* FIXED FLUID GRID SYSTEM */
+/*======================================*/
+.fixed-fluid {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.fixed-fluid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.fixed-fluid > .pull-xs-left {
+  float: left;
+}
+.fixed-fluid > .pull-xs-right {
+  float: right;
+}
+.fixed-fluid > .fixed-xs-160 {
+  width: 180px;
+}
+.fixed-fluid > .fixed-xs-200 {
+  width: 220px;
+}
+.fixed-fluid > .fixed-xs-250 {
+  width: 270px;
+}
+.fixed-fluid > .fixed-xs-300 {
+  width: 320px;
+}
+.fixed-fluid > .fixed-xs-350 {
+  width: 370px;
+}
+.fixed-fluid > [class^="fixed-"],
+.fixed-fluid [class*=" fixed-"] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.fixed-fluid > .fluid {
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
+  .fixed-fluid > .pull-sm-left {
+    float: left;
+  }
+  .fixed-fluid > .pull-sm-right {
+    float: right;
+  }
+  .fixed-fluid > .fixed-sm-160 {
+    width: 180px;
+  }
+  .fixed-fluid > .fixed-sm-200 {
+    width: 220px;
+  }
+  .fixed-fluid > .fixed-sm-250 {
+    width: 270px;
+  }
+  .fixed-fluid > .fixed-sm-300 {
+    width: 320px;
+  }
+  .fixed-fluid > .fixed-sm-350 {
+    width: 370px;
+  }
+  .fixed-fluid > .fixed-left-border {
+    border-left: 1px solid rgba(0, 0, 0, 0.07);
+  }
+  .fixed-fluid > .fixed-right-border {
+    border-right: 1px solid rgba(0, 0, 0, 0.07);
+  }
+  .panel-body > .fixed-fluid > .fixed-left-border {
+    padding-left: 15px;
+  }
+  .panel-body > .fixed-fluid > .fixed-left-border + .fluid {
+    padding-right: 15px;
+  }
+  .panel-body > .fixed-fluid > .fixed-right-border {
+    padding-right: 15px;
+  }
+  .panel-body > .fixed-fluid > .fixed-right-border + .fluid {
+    padding-left: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .fixed-fluid > .pull-md-left {
+    float: left;
+  }
+  .fixed-fluid > .pull-md-right {
+    float: right;
+  }
+  .fixed-fluid > .fixed-md-160 {
+    width: 180px;
+  }
+  .fixed-fluid > .fixed-md-200 {
+    width: 220px;
+  }
+  .fixed-fluid > .fixed-md-250 {
+    width: 270px;
+  }
+  .fixed-fluid > .fixed-md-300 {
+    width: 320px;
+  }
+  .fixed-fluid > .fixed-md-350 {
+    width: 370px;
+  }
+}
+@media (min-width: 1200px) {
+  .fixed-fluid > .pull-lg-left {
+    float: left;
+  }
+  .fixed-fluid > .pull-lg-right {
+    float: right;
+  }
+  .fixed-fluid > .fixed-lg-160 {
+    width: 180px;
+  }
+  .fixed-fluid > .fixed-lg-200 {
+    width: 220px;
+  }
+  .fixed-fluid > .fixed-lg-250 {
+    width: 270px;
+  }
+  .fixed-fluid > .fixed-lg-300 {
+    width: 320px;
+  }
+  .fixed-fluid > .fixed-lg-350 {
+    width: 370px;
+  }
+}
+.bord-btm {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.pad-btm {
+  padding-bottom: 15px;
+}
+/* LIST GROUP */
+/*======================================*/
+.list-group-striped > li:nth-child(odd),
+.list-group-striped > a:nth-child(odd):not(.active):not(.disabled) {
+  background-color: rgba(0, 0, 0, 0.015);
+}
+.list-group.bg-trans .list-group-item:not(.active):not(.disabled) {
+  background-color: transparent;
+  border-color: transparent;
+  color: inherit;
+}
+.list-group.bg-trans .list-group-item .disabled {
+  opacity: 0.5;
+}
+.list-group.bg-trans a.list-group-item:hover:not(.active) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.list-group.bord-no .list-group-item {
+  border-color: transparent;
+}
+.list-group .list-divider {
+  display: block;
+}
+.list-group-item {
+  border-color: rgba(0, 0, 0, 0.07);
+  background-color: transparent;
+  color: #7a878e;
+}
+a.list-group-item,
+button.list-group-item {
+  color: #7a878e;
+}
+a.list-group-item:hover,
+button.list-group-item:hover,
+a.list-group-item:focus,
+button.list-group-item:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: #7a878e;
+}
+.list-group-item .list-group-item-heading,
+a.list-group-item .list-group-item-heading,
+button.list-group-item .list-group-item-heading {
+  color: #4d627b;
+}
+.list-group-item-heading {
+  margin-top: 5px;
+}
+.list-group-item:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.list-group-item:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.list-group-item.disabled,
+.list-group-item.disabled:hover,
+.list-group-item.disabled:focus {
+  background-color: transparent;
+  color: #b1b9bd;
+}
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  background-color: #25476a !important;
+  border-color: #25476a;
+  color: #fff;
+}
+.list-group-item.active .list-group-item-text,
+.list-group-item.active:hover .list-group-item-text,
+.list-group-item.active:focus .list-group-item-text {
+  color: #fff;
+}
+a.list-group-item-primary,
+.list-group-item-primary {
+  background-color: #2e5984;
+  border-color: transparent;
+  color: #fff;
+}
+a.list-group-item-primary:hover,
+a.list-group-item-primary:focus,
+button.list-group-item-primary:hover,
+button.list-group-item-primary:focus {
+  background-color: #326090;
+  color: #fff;
+}
+a.list-group-item-info,
+.list-group-item-info {
+  background-color: #1eb7fc;
+  border-color: transparent;
+  color: #fff;
+}
+a.list-group-item-info:hover,
+a.list-group-item-info:focus,
+button.list-group-item-info:hover,
+button.list-group-item-info:focus {
+  background-color: #2ebcfc;
+  color: #fff;
+}
+a.list-group-item-success,
+.list-group-item-success {
+  background-color: #9ccc65;
+  border-color: transparent;
+  color: #fff;
+}
+a.list-group-item-success:hover,
+a.list-group-item-success:focus,
+button.list-group-item-success:hover,
+button.list-group-item-success:focus {
+  background-color: #a4d070;
+  color: #fff;
+}
+a.list-group-item-warning,
+.list-group-item-warning {
+  background-color: #ffbe24;
+  border-color: transparent;
+  color: #fff;
+}
+a.list-group-item-warning:hover,
+a.list-group-item-warning:focus,
+button.list-group-item-warning:hover,
+button.list-group-item-warning:focus {
+  background-color: #ffc233;
+  color: #fff;
+}
+a.list-group-item-danger,
+.list-group-item-danger {
+  background-color: #f66358;
+  border-color: transparent;
+  color: #fff;
+}
+a.list-group-item-danger:hover,
+a.list-group-item-danger:focus,
+button.list-group-item-danger:hover,
+button.list-group-item-danger:focus {
+  background-color: #f77066;
+  color: #fff;
+}
+a.list-group-item-mint,
+.list-group-item-mint {
+  background-color: #2dc3b5;
+  border-color: transparent;
+  color: #fff;
+}
+a.list-group-item-mint:hover,
+a.list-group-item-mint:focus,
+button.list-group-item-mint:hover,
+button.list-group-item-mint:focus {
+  background-color: #30d0c1;
+  color: #fff;
+}
+a.list-group-item-purple,
+.list-group-item-purple {
+  background-color: #b761c6;
+  border-color: transparent;
+  color: #fff;
+}
+a.list-group-item-purple:hover,
+a.list-group-item-purple:focus,
+button.list-group-item-purple:hover,
+button.list-group-item-purple:focus {
+  background-color: #bc6cca;
+  color: #fff;
+}
+a.list-group-item-pink,
+.list-group-item-pink {
+  background-color: #f383a9;
+  border-color: transparent;
+  color: #fff;
+}
+a.list-group-item-pink:hover,
+a.list-group-item-pink:focus,
+button.list-group-item-pink:hover,
+button.list-group-item-pink:focus {
+  background-color: #f491b2;
+  color: #fff;
+}
+a.list-group-item-dark,
+.list-group-item-dark {
+  background-color: #495662;
+  border-color: transparent;
+  color: #fff;
+}
+a.list-group-item-dark:hover,
+a.list-group-item-dark:focus,
+button.list-group-item-dark:hover,
+button.list-group-item-dark:focus {
+  background-color: #505e6b;
+  color: #fff;
+}
+
+.bg-trans {
+  background-color: transparent;
+}
+
+.icon-2x {
+  font-size: 2em;
+  line-height: 1em;
+}
