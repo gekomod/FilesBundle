@@ -1,0 +1,19 @@
+services:
+    file_type_extension:
+        class: Gekomod\FilesBundle\Twig\FileTypeExtension
+        tags:
+            - { name: twig.extension }
+        arguments: ['@file_type_service']
+        public: true
+
+    file_type_service:
+        class: Gekomod\FilesBundle\Service\FileTypeService
+        arguments: ['@router']
+        public: true
+
+    order_extension:
+        class: Gekomod\FilesBundle\Twig\OrderExtension
+        tags:
+            - { name: twig.extension }
+        arguments: ['@router']
+        public: true
