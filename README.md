@@ -84,7 +84,7 @@ artgris_file_manager:
 Browse the `/manager/?conf=default` URL and you'll get access to your 
 file manager
  
-[1]: https://travis-ci.org/github/gekomod/FilesBundle.svg?branch=master
-[2]: https://travis-ci.org/github/gekomod/FilesBundle
+[1]: https://travis-ci.org/gekomod/FilesBundle.svg?branch=master
+[2]: https://travis-ci.org/gekomod/FilesBundle
 [7]: https://img.shields.io/badge/symfony-2.x%2C%203.x%20and%204.x-green.svg
 [8]: https://symfony.com/
