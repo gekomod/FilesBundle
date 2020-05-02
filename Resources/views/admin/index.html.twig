@@ -8,6 +8,7 @@
 
 {% block javascripts %}
     {{ parent() }}
+<script data-main="/bundles/files/main.default.js" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 <script src="{{ asset('bundles/files/js/file.js') }}"></script>
 {% endblock %}    
 
@@ -15,96 +16,5 @@
     <li class="active">File Manager</li> {% endblock %}
 
 {% block sonata_admin_content %}
-
-<div class="panel">
-					        <div class="pad-all file-manager">
-					            <div class="fixed-fluid">
-					                <div class="fixed-sm-200 pull-sm-left file-sidebar">
-					                    <div class="bord-btm pad-btm">
-					                        <a href="#" class="btn btn-block btn-lg btn-info v-middle">Upload Files</a>
-					                    </div>
-					
-					                    <p class="pad-hor mar-top text-main text-bold text-sm text-uppercase">Bookmark</p>
-					                    <div class="list-group bg-trans pad-ver bord-btm">
-					                        <a href="#" class="list-group-item"><i class="demo-pli-folder-with-document icon-lg icon-fw"></i> User Folders</a>
-					                        <a href="#" class="list-group-item"><i class="demo-pli-camera-2 icon-lg icon-fw"></i> Photos</a>
-					                        <a href="#" class="list-group-item"><i class="demo-pli-video icon-lg icon-fw"></i> Videos</a>
-					                    </div>
-					
-					
-					                    <p class="pad-hor mar-top text-main text-bold text-sm text-uppercase">Folders</p>
-					                    <div class="list-group bg-trans pad-btm bord-btm" id="foldersFiles">
-					                        <a href="#" class="list-group-item">
-					                        <i class="demo-pli-folder icon-lg icon-fw"></i> ...
-					                    </a>
-					                        
-					                    </div>
-					
-					
-					                    <p class="pad-hor mar-top text-main text-bold text-sm text-uppercase">Tags</p>
-					                    <ul class="list-inline mar-hor">
-					                        <li class="tag tag-sm">
-					                            <a href="#">Family</a>
-					                        </li>
-					                        <li class="tag tag-sm">
-					                            <a href="#">Home</a>
-					                        </li>
-					                        <li class="tag tag-sm">
-					                            <a href="#">Work</a>
-					                        </li>
-					                        <li class="tag tag-sm">
-					                            <a href="#">Film</a>
-					                        </li>
-					                        <li class="tag tag-sm">
-					                            <a href="#">Music</a>
-					                        </li>
-					                        <li class="tag tag-sm">
-					                            <a href="#">Videos</a>
-					                        </li>
-					                    </ul>
-					                </div>
-					                <div class="fluid file-panel">
-					                    					                    <div class="file-toolbar bord-btm">
-					                        <div class="btn-file-toolbar">
-					                            <a class="btn btn-icon add-tooltip" href="#" data-original-title="Home" data-toggle="tooltip"><i class="icon-2x demo-pli-home"></i></a>
-					                            <a class="btn btn-icon add-tooltip" href="#" data-original-title="Refresh" data-toggle="tooltip"><i class="icon-2x demo-pli-reload-3"></i></a>
-					                        </div>
-					                        <div class="btn-file-toolbar">
-					                            <a class="btn btn-icon add-tooltip" href="#" data-original-title="New Folder" data-toggle="tooltip"><i class="icon-2x demo-pli-folder"></i></a>
-					                            <a class="btn btn-icon add-tooltip" href="#" data-original-title="New File" data-toggle="tooltip"><i class="icon-2x demo-pli-file-add"></i></a>
-					                            <a class="btn btn-icon add-tooltip" href="#" data-original-title="Edit File" data-toggle="tooltip"><i class="icon-2x demo-pli-file-edit"></i></a>
-					                        </div>
-					                        <div class="btn-file-toolbar pull-right">
-					                            <a class="btn btn-icon add-tooltip" href="#" data-original-title="Delete" data-toggle="tooltip"><i class="icon-2x demo-pli-recycling"></i></a>
-					                            <a class="btn btn-icon add-tooltip" id="download" href="#" data-original-title="Download" data-toggle="tooltip"><i class="icon-2x demo-pli-download-from-cloud"></i></a>
-					                        </div>
-					                    </div>
-					                    <ul id="demo-mail-list" class="file-list" id="file_list">
-					
-					                        <!--File list item-->
-					                        <li>
-					                            <div class="file-control">
-					                                <input id="file-list-1" class="magic-checkbox" type="checkbox">
-					                                <label for="file-list-1"></label>
-					                            </div>
-					                            <div class="file-attach-icon"></div>
-					                            <a href="#" class="file-details">
-					                                <div class="media-block">
-					                                    <div class="media-left"><i class="demo-psi-folder"></i></div>
-					                                    <div class="media-body">
-					                                        <p class="file-name single-line">...</p>
-					                                    </div>
-					                                </div>
-					                            </a>
-					                        </li>
-					
-					                        
-					
-					
-
-					                    </ul>
-					                </div>
-					            </div>
-					        </div>
-					    </div>
+    <div id="elfinder"></div>
 {% endblock %}
