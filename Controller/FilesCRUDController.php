@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class FilesCRUDController extends CRUDController
 {
-    public function listAction()
+    public function listAction(\Symfony\Component\HttpFoundation\Request $request): \Symfony\Component\HttpFoundation\Response
     {
         return $this->renderWithExtraParams('@Files/admin/index.html.twig');
     }
